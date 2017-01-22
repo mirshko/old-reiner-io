@@ -1,0 +1,42 @@
+
+// The Box
+// ******************************
+
+.box {
+	// BOX
+    max-width: $box-max-width;
+	background-image: $white-overlay;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	// BOX BACKGROUND
+	&__image { background-image: $white-overlay, $bg-image-blur; }
+
+	// INTERNALS
+	&__top, &__middle, &__bottom {
+		padding: $box-padding;
+
+		border-top: $border;
+		border-right: $border;
+		border-bottom: $border;
+		border-left: $border;
+
+		a:not([class*="social__"]) {
+			color: $off-black;
+			padding-bottom: 2px;
+			border-bottom: $border-link;
+		}
+	}
+	&__middle, &__bottom { border-top: none; }
+
+	// ELEMENT OVERIDES
+	.bold { margin-bottom: 8px; }
+	p, ul { margin: 0; }
+	li:not(:last-child) { margin-bottom: 1em; }
+	small {
+		@media #{$small-and-down} { display: block; margin-top: .5em; }
+	}
+}
+
+
+
