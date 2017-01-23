@@ -3,56 +3,69 @@
 // ******************************
 
 .box {
-	// BOX
     max-width: $box-max-width;
+
 	background-image: $white-overlay;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 
-	// BOX BACKGROUND
 	&__image { background-image: $white-overlay, $bg-image-blur; }
 
-	// INTERNALS
-	&__top, &__middle, &__bottom { border: $border; padding: $box-padding; }
+	// INSIDES
 
-	&__bottom:empty { padding: 0; }
+	&__top, &__middle, &__bottom {
+		padding: $box-padding;
 
-	&__top + &__middle,
-	&__middle + &__middle,
-	&__middle + &__bottom { border-top: none; }
+		p {
+			&:first-child { margin-top: 0; }
+			&:last-child { margin-bottom: 0; }
+		}
+	}
 
-	&__middle + &__bottom:empty { border: none; }
+	&__top {
+		border-top: $border;
+		border-right: $border;
+		border-left: $border;
+	}
 
-	&__middle:last-child { border-bottom: none; }
-
-	// ELEMENT OVERIDES
-	&__top p { margin: 0; }
-
-	&__middle, &__bottom {
-		p:first-child { margin-top: 0; }
-
-		p:last-child { margin-bottom: 0; }
-
-		p.list-header { margin-bottom: .5em; }
+	&__middle {
+		border-top: $border;
+		border-right: $border;
+		border-left: $border;
 
 		ul {
 			margin: 0;
 			li:not(:last-child) { margin-bottom: 1em; }
 		}
-
 		small {
 			@media #{$small-and-down} { display: block; margin-top: .5em; }
 		}
-
 	}
 
-	// LINK STYLING
-	a:not([class*="social__"]) {
-		color: $off-black;
-		padding-bottom: 2px;
-		border-bottom: $border-link;
+	&__bottom {
+		border-top: $border;
+		border-right: $border;
+		border-bottom: $border;
+		border-left: $border;
+
+		&:empty {
+			border-bottom: none;
+			padding: 0;
+		}
+
+		// &__cta {
+		// 	padding: 0;
+		//
+		// 	a {
+		// 		display: block;
+		// 		text-align: center;
+		// 		line-height: 64px;
+		//
+		// 		border: none;
+		// 		padding: 0;
+		//
+		// 		text-transform: uppercase;
+		// 	}
+		// }
 	}
 }
-
-
-
