@@ -4,6 +4,8 @@
 
 html {
 	box-sizing: border-box;
+
+	background-color: $bg-color;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -31,29 +33,32 @@ a {
 	clear: both;
 }
 
-.full-height {
-	min-height: 100vh;
-	min-width: 100vw;
+.background {
+	background-color: $bg-color;
 
 	padding: $box-padding * 2;
 	@media #{$small-and-down} { padding: $box-padding; }
 
-	background-color: $bg-color;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	min-height: 100vh;
+	min-width: 100vw;
 
 	&__image { background-image: $bg-image; }
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
+
+
 // CENTER WRAPPER
-.aligner {
+.valigner {
 	@media #{$medium-and-up} {
 		display: flex;
 		align-items: center;
-		justify-content: center;
-
-		&__center { max-width: 50%; }
 	}
+
+	&__center { justify-content: center; }
+	&__left { justify-content: flex-start; }
+	&__right { justify-content: flex-end; }
 }
 
 // Media Query Classes
