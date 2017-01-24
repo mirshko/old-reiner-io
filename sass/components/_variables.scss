@@ -1,21 +1,30 @@
 
 // Colors
 // ******************************
+// #303A52
+// #574B90
+// #9E579D
+// #FC85AE
+// ******************************
 
-$off-black: rgba(0, 0, 0, 0.85) !default;
+$off-black: rgba(0, 0, 0, 0.87) !default;
+
+$white: #FFF !default;
+
+$light-black: #212121 !default;
 
 $twitter: #1da1f2 !default;
 $github: #6762a6 !default;
 $dribbble: #c13584 !default;
 $medium: #00AB6C !default;
 
-$gradient: rgba(#FFF, 0.70) !default;
+$gradient: rgba(#FFF, 0.87) !default;
 $white-overlay: linear-gradient($gradient, $gradient) !default;
 
 // Backgrounds
 // ******************************
 
-$bg-color: #34495E !default;
+$bg-color: #303A52 !default;
 
 $bg-image: url("/img/nasa.jpg") !default;
 $bg-image-blur: url("/img/nasa-blur.jpg") !default;
