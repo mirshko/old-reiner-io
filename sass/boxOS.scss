@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-// Variables
-@import "components/variables";
-
 // Reset
 @import "components/normalize";
+
+// Variables
+@import "components/variables";
 
 // Components
 @import "components/global";

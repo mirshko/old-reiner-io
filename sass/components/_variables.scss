@@ -17,6 +17,7 @@ $twitter: #1da1f2 !default;
 $github: #6762a6 !default;
 $dribbble: #c13584 !default;
 $medium: #00AB6C !default;
+$keybase: #33a0ff !default;
 
 $gradient: rgba(#FFF, 0.87) !default;
 $white-overlay: linear-gradient($gradient, $gradient) !default;
@@ -34,7 +35,7 @@ $bg-image-blur: url("/img/nasa-blur.jpg") !default;
 // ******************************
 
 $border: 2px solid $off-black !default;
-$border-link: 1px solid $off-black !default;
+$border-link: 2px solid $off-black !default;
 $box-padding: 24px;
 $box-max-width: 560px;
 

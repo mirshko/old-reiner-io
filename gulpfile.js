@@ -1,7 +1,14 @@
-var gulp 		= require('gulp');
+var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
-var sass 		= require('gulp-sass');
-var surge 		= require('gulp-surge')
+var sass = require('gulp-sass');
+var surge = require('gulp-surge')
+
+
+// DEFAULT
+gulp.task('default', ['sass', 'browser-sync'], function() {
+    gulp.watch("./sass/**/*.scss", ['sass']);
+    gulp.watch("./*.html").on('change', browserSync.reload);
+});
 
 // BROWSER-SYNC
 gulp.task('browser-sync', function() {
@@ -10,12 +17,6 @@ gulp.task('browser-sync', function() {
             baseDir: "./"
         }
     });
-});
-
-// SERVE
-gulp.task('serve', ['sass', 'browser-sync'], function() {
-    gulp.watch("./sass/**/*.scss", ['sass']);
-    gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
 // COMPILE SASS
