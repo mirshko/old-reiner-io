@@ -24,15 +24,10 @@ ul {
 	}
 }
 
-a {
-	// GETS RID OF TAP ACTIVE STATE
-	-webkit-tap-highlight-color: transparent;
-
-	&:not([class*="social__"]) {
-		color: $off-black;
-		padding-bottom: 2px;
-		border-bottom: $border-link;
-	}
+a:not([class*="social__"]) {
+	color: $off-black;
+	padding-bottom: 2px;
+	border-bottom: $border-link;
 }
 
 

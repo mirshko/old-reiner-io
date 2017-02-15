@@ -1,4 +1,7 @@
-a { text-decoration: none; }
+a {
+	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
+}
 
 html {
     line-height: 1.5;
