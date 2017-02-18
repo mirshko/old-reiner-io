@@ -4,21 +4,20 @@ a {
 }
 
 html {
-    line-height: 1.5;
+	line-height: 1.5;
 
-    font-size: 16px;
+	font-size: 16px;
 
-    @import url("//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css");
-    font-family: Hack, monospace;
+	font-family: Hack, monospace;
 
-    font-weight: normal;
+	font-weight: normal;
 
-    color: $off-black;
+	color: $off-black;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.5;
-    font-weight: normal;
+	font-weight: normal;
 }
 
 // HEADER STYLES

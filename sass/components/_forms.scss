@@ -1,59 +1,65 @@
 form {
-	
-	
+
+
 	input {
 		&[type="text"], &[type="email"] {
 			border: none;
-			border-bottom: 2px solid $off-black;
 			outline: none;
-			
+
 			padding: 4px 0;
 			margin: 0;
 			margin-bottom: 10px;
-			
+
+			max-width: 100%;
 			width: 100%;
-			
+
 			background-color: transparent;
-			
+
 			font-family: Hack, monospace;
+
+			border-bottom: 2px solid rgba($black, 0.12);
+
+			&:focus, &:active {
+				border-bottom: 2px solid $off-black;
+			}
 		}
 	}
 	textarea {
 		max-width: 100%;
 		width: 100%;
-		
+
 		padding: 0;
 		margin: 0;
 		margin-bottom: 10px;
-		
+
 		resize: both;
-		
+
 		padding: 4px 0;
-		
+
 		border: none;
 		outline: none;
-		
+
 		background-color: transparent;
-		
-		border-bottom: 2px solid $off-black;
-		
+
+		border-bottom: 2px solid rgba($black, 0.12);
+
+		&:focus, &:active {
+			border-bottom: 2px solid $off-black;
+		}
+
 		font-family: Hack, monospace;
 	}
 	button[type="submit"] {
-		margin: 0;		
+		margin: 0;
 		padding: 4px 8px;
-		
+
 		border: none;
-			
+
 		outline: none;
-		
-		background-color: $primary-color;
+
+		background-color: $off-black;
 		color: $white;
-		
+
 		font-family: Hack, monospace;
-		
-		&:hover, &:active, &:focus {
-			background-color: lighten($primary-color, 7.5%);
-		}
-	}	
+	}
 }
