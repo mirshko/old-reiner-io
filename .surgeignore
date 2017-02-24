@@ -1,5 +1,6 @@
-*.md
-*.json
-*.js
 node_modules
-sass
+scss
+js
+gulpfile.js
+package.json
+README.md

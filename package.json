@@ -1,18 +1,35 @@
 {
-  "name": "reiner-io",
-  "version": "1.0.0",
-  "description": "reiner.io website",
-  "main": "index.html",
-  "scripts": {
-    "test": ""
-  },
-  "author": "Jeff Reiner",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.18.5",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.0.0",
-    "gulp-sourcemaps": "^2.4.1",
-    "gulp-surge": "^0.1.0"
-  }
+	"name": "reiner-io",
+	"version": "1.0.0",
+	"description": "reiner.io website",
+	"main": "index.html",
+	"scripts": {
+		"test": ""
+	},
+	"repository": {
+		"type": "git",
+		"url": "http://www.github.com/mirshko/reiner-io"
+	},
+	"author": "Jeff Reiner",
+	"license": "ISC",
+	"devDependencies": {
+		"browser-sync": "^2.18.5",
+		"gulp": "^3.9.1",
+		"gulp-htmlmin": "^3.0.0",
+		"gulp-imageoptim": "^1.0.8",
+		"gulp-rename": "^1.2.2",
+		"gulp-sass": "^3.0.0",
+		"gulp-sourcemaps": "^2.4.1",
+		"gulp-surge": "^0.1.0",
+		"gulp-uglify": "^2.0.1",
+		"gulp-xo": "^0.14.0"
+	},
+	"xo": {
+		"globals": [
+			"$",
+			"document",
+			"window"
+		]
+	},
+	"dependencies": {}
 }

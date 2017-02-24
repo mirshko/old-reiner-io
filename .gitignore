@@ -1,3 +1,2 @@
-/node_modules
-*.scssc
-/dist
+node_modules
+dist
