@@ -16,7 +16,7 @@ var xo = require('gulp-xo');
 // ***********
 
 // DEFAULT
-gulp.task('default', ['styles', 'scripts', 'browser-sync'], function() {
+gulp.task('default', ['styles', 'browser-sync'], function() {
 	gulp.watch("./scss/**/*.scss", ['styles']);
 	gulp.watch('./js/**/*.js', ['scripts']);
 	gulp.watch("./*.html").on('change', browserSync.reload);
@@ -45,7 +45,7 @@ gulp.task('scripts', function () {
 // STYLES
 gulp.task('styles', function () {
 	return gulp.src('./scss/**/*.scss')
-		pipe(sourcemaps.init())
+		.pipe(sourcemaps.init())
 		.pipe(sass({
 			outputStyle: 'compressed'
 		}).on('error', sass.logError))
