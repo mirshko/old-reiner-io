@@ -60,6 +60,6 @@ gulp.task('styles', function () {
 gulp.task('deploy', function() {
 	return surge({
 		project: './', // PATH TO YOUR STATIC BUILD DIRECTORY
-		domain: 'reiner.io' // YOUR DOMAIN OR SURGE SUBDOMAIN
+		domain: 'reiner.space' // YOUR DOMAIN OR SURGE SUBDOMAIN
 	});
 });
