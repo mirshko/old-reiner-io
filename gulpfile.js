@@ -57,7 +57,7 @@ gulp.task('styles', function () {
 });
 
 // DEPLOY
-gulp.task('deploy', function() {
+gulp.task('deploy', ['styles', 'scripts'], function() {
 	return surge({
 		project: './', // PATH TO YOUR STATIC BUILD DIRECTORY
 		domain: 'reiner.io' // YOUR DOMAIN OR SURGE SUBDOMAIN
