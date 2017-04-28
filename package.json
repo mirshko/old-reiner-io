@@ -4,7 +4,7 @@
 	"description": "reiner.io website",
 	"main": "index.html",
 	"scripts": {
-		"test": ""
+		"start": "gulp"
 	},
 	"repository": {
 		"type": "git",

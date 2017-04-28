@@ -10,3 +10,13 @@
 @import "components/global";
 @import "components/typography";
 @import "components/the-box";
+
+.logo {
+	width: 192px;
+}
+
+.responsive {
+	@media #{$small-and-down} {
+		font-size: 3rem;
+	}
+}
